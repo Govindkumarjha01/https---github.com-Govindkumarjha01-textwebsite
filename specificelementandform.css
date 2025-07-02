@@ -1,0 +1,42 @@
+/* ------------------------------------------
+   ::details-content for expandable details
+   ------------------------------------------ */
+/* Styles the content inside the <details> element */
+.details-expand::details-content {
+  background: #e3f2fd;
+  border-left: 4px solid #1565c0;
+  font-size: 1.1em;
+  color: #1565c0;
+}
+
+/* ------------------------------------------
+   ::file-selector-button for file input controls
+   ------------------------------------------ */
+.file-selector::file-selector-button {
+  background: #43a047;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.file-selector::file-selector-button:hover {
+  background: #1b5e20;
+}
+
+/* ------------------------------------------
+   ::placeholder for input and textarea fields
+   ------------------------------------------ */
+.placeholder-input::placeholder {
+  color: #fbc02d;
+  font-style: italic;
+  opacity: 1;
+  font-size: 1em;
+}
+.placeholder-input:focus::placeholder {
+  color: #c62828;
+  opacity: 0.7;
+}

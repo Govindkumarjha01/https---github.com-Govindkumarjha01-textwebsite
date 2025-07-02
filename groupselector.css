@@ -1,0 +1,14 @@
+/* groupselectorexample.css */
+
+h1, h2, p {
+    color: red;
+}
+
+h2, span {
+    font-size: 80px;
+}
+
+/* It will override the previous rule */    
+h2, p {
+    color: blue;
+ }

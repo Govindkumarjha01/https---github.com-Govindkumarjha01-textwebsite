@@ -1,0 +1,61 @@
+<!-- FormInput1.css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form State Pseudo-Classes | ChiPi Technologies</title>
+  <link rel="stylesheet" href="./forminput1.css">
+</head>
+<body>
+  <h1>Form State Pseudo-Classes Demo</h1>
+
+  <!-- ========== :read-only & :read-write ========== -->
+  <section>
+    <h2>:read-only & :read-write</h2>
+    <form>
+      <label>
+        Read-only text:
+        <input type="text" class="readonly-demo" value="You can't change me" readonly>
+      </label>
+      <br>
+      <label>
+        Read-only textarea:
+        <textarea class="readonly-demo" readonly>Readonly textarea example</textarea>
+      </label>
+      <br>
+      <label>
+        Editable input:
+        <input type="text" class="readwrite-demo" placeholder="Type here!">
+      </label>
+      <br>
+      <label>
+        Editable textarea:
+        <textarea class="readwrite-demo" placeholder="Edit me" ></textarea>
+      </label>
+    </form>
+  </section>
+  <hr>
+
+  <!-- ========== :placeholder-shown ========== -->
+  <section>
+    <h2>:placeholder-shown</h2>
+    <form>
+      <label>
+        With Placeholder:
+        <input type="text" class="placeholder-demo" placeholder="See my style!">
+      </label>
+      <br>
+      <label>
+        Textarea Placeholder:
+        <textarea class="placeholder-demo" placeholder="Start typing..."></textarea>
+      </label>
+      <br>
+      <label>
+        No Placeholder:
+        <input type="text" class="placeholder-demo">
+      </label>
+    </form>
+  </section>
+  <hr>
+</body>
+</html>

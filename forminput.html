@@ -1,0 +1,72 @@
+<!-- FormInput.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Form Validation Pseudo-Classes | ChiPi Technologies</title>
+    <link rel="stylesheet" href="./forminput.css">
+</head>
+<body>
+    <h1>Form Validation & Input State Pseudo-Classes Demo</h1>
+
+    <!-- ========== :valid and :invalid ========== -->
+    <section>
+        <h2>:valid & :invalid</h2>
+        <form>
+            <label>Email (must be valid): 
+                <input type="email" class="valid-invalid-demo" required placeholder="abc@example.com">
+            </label>
+            <br>
+            <label>Pattern (digits only): 
+                <input type="text" class="valid-invalid-pattern" pattern="\d+" required placeholder="Numbers only">
+            </label>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ========== :required & :optional ========== -->
+    <section>
+        <h2>:required & :optional</h2>
+        <form>
+            <label>Name (required): 
+                <input type="text" class="required-demo" required>
+            </label>
+            <br>
+            <label>Comment (optional): 
+                <input type="text" class="optional-demo" >
+            </label>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ========== :in-range & :out-of-range ========== -->
+    <section>
+        <h2>:in-range & :out-of-range</h2>
+        <form>
+            <label>Age (10-30): 
+                <input type="number" class="range-demo" min="10" max="30" value="15">
+            </label>
+            <br>
+            <label>Score (0-100): 
+                <input type="range" class="range-demo2" min="0" max="100" value="50">
+            </label>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ========== :default ========== -->
+    <section>
+        <h2>:default</h2>
+        <form>
+            <button type="submit" class="default-demo">Submit (default)</button>
+            <button type="button" class="default-demo" >Secondary</button>
+        </form>
+        <form>
+            <input type="radio" name="color" class="default-radio" checked> Red
+            <input type="radio" name="color" class="default-radio" > Blue
+            <input type="radio" name="color" class="default-radio" > Green
+        </form>
+    </section>
+    <hr>
+</body>
+</html>
