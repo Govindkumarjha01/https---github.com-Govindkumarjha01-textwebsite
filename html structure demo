@@ -4,6 +4,8 @@
     <title>HTML Tags Demo - ChiPi Technologies</title>
 </head>
 <body>
+    \ <a href="../home.html">home page</a>
+        <form>
     <h1>ChiPi Technologies Private Limited</h1>
     
     <h2>HTML Structure Demo</h2>
