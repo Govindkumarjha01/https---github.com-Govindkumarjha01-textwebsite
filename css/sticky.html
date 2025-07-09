@@ -1,0 +1,157 @@
+<!-- sticky.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChiPi Technologies – Fixed vs Sticky Positioning" />
+  <link rel="stylesheet" href="../css/sticky.css" />
+  <title>ChiPi Technologies – Sticky Positioning</title>
+</head>
+<body>
+  <header class="site-header">
+    <h1>ChiPi Technologies</h1>
+    <p>Compare <strong>fixed</strong> and <strong>sticky</strong> CSS positioning</p>
+  </header>
+
+  <main>
+    <!-- Fixed Demo -->
+    <section class="demo-section">
+      <h2>Fixed Positioning Demo</h2>
+      <p class="intro">
+        Scroll the page—these boxes stay locked to the viewport.
+      </p>
+
+      <div class="fixed-box box1">
+        Fixed Box 1<br><small>(top: 20px; left: 20px)</small>
+      </div>
+      <div class="fixed-box box2">
+        Fixed Box 2<br><small>(top: 20px; right: 20px)</small>
+      </div>
+      <div class="fixed-box box3">
+        Fixed Box 3<br><small>(bottom: 20px; left: 20px)</small>
+      </div>
+
+      <div class="content">
+        <p>
+          At ChiPi Technologies, we offer industry-aligned courses in HTML, CSS, JavaScript, React, Python, and more—designed to make you job-ready from day one.
+        </p>
+        <p>
+          Our instructors are seasoned IT professionals with over 20 years of experience, ensuring every concept is taught using real-world best practices.
+        </p>
+        <p>
+          In our live, hands-on sessions you’ll write code as you learn—building websites, web apps, and tools you can immediately add to your portfolio.
+        </p>
+        <p>
+          We run flexible weekend batches, so you can upskill without disrupting your college or work schedule.
+        </p>
+        <p>
+          Bilingual instruction (Hindi & English) makes sure language is never a barrier to mastering technical skills.
+        </p>
+        <p>
+          Through project-based learning, you’ll collaborate on full-stack mini-apps, giving you practical experience and a strong showcase for interviews.
+        </p>
+        <p>
+          Our mock interviews, coding challenges, and resume workshops equip you to confidently face real employer screenings.
+        </p>
+        <p>
+          Graduates get placement support via exclusive job fairs, partner referrals, and career guidance from our dedicated mentors.
+        </p>
+        <p>
+          Join a thriving community of peers and alumni—network on Slack, GitHub projects, and live coding hackathons.
+        </p>
+        <p>
+          Start your journey with ChiPi Technologies today—where practical learning meets career success!
+        </p>
+      </div>
+    </section>
+
+    <!-- Sticky Demo -->
+    <section class="demo-section sticky-demo">
+      <h2>Sticky Positioning Demo</h2>
+      <p class="intro">
+        Scroll inside the box—this header will “stick” at the top of its container.
+      </p>
+
+      <div class="sticky-container">
+        <p>
+            ChiPi Technologies brings you practical, project-based learning in CSS, JavaScript, React, and Python.
+        </p>
+        <div class="sticky-box">
+          Sticky Header (sticks inside this panel)
+        </div>
+        <div class="scroll-content">
+          <p>
+            ChiPi Technologies brings you practical, project-based learning in CSS, JavaScript, React, and Python.
+          </p>
+          <p>
+            Sticky positioning keeps section headers visible as you scroll through long content panels.
+          </p>
+          <p>
+            This makes it ideal for table headings, navigation tabs, or any element you want to keep in view.
+          </p>
+          <p>
+            Batches run on weekends in Hindi & English—so you never miss a live session.
+          </p>
+          <p>
+            Build real-world mini-projects and get them reviewed by our expert mentors.
+          </p>
+          <p>
+            Practice coding challenges, mock interviews, and resume workshops right inside our platform.
+          </p>
+          <p>
+            Network with peers in our active Slack community and showcase your work on GitHub.
+          </p>
+          <p>
+            Placement assistance includes job fairs, partner referrals, and one-on-one career guidance.
+          </p>
+          <p>
+            By the time you graduate, you’ll have a strong portfolio and the confidence to ace interviews.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guidance -->
+    <section class="guidance-section">
+      <!-- Fixed Guidance -->
+      <h2>Fixed Positioning: When to Use</h2>
+      <ul>
+        <li>Keep headers, footers, or navbars visible at all times.</li>
+        <li>Floating action buttons or “back to top” widgets.</li>
+        <li>Persistent chat/support icons.</li>
+      </ul>
+      <h2>Fixed Positioning: When Not to Use</h2>
+      <ul>
+        <li>Large layout containers that should scroll with content.</li>
+        <li>Elements needing to participate in the normal flow.</li>
+      </ul>
+      <h2>Fixed Positioning: Precautions</h2>
+      <ul>
+        <li>Manage <code>z-index</code> so fixed elements don’t hide critical UI.</li>
+        <li>Ensure fixed items are sized for mobile screens.</li>
+        <li>Use sparingly—too many fixed items can clutter the page.</li>
+      </ul>
+
+      <!-- Sticky Guidance -->
+      <h2>Sticky Positioning: When to Use</h2>
+      <ul>
+        <li>Keep section headers or sub-navigation in view as you scroll.</li>
+        <li>Ideal for table headers within a scrollable panel.</li>
+        <li>Use for in-page anchors and tab menus.</li>
+      </ul>
+      <h2>Sticky Positioning: When Not to Use</h2>
+      <ul>
+        <li>For elements that must remain visible outside their container’s scroll area.</li>
+        <li>When the container isn’t scrollable or has no height limit.</li>
+      </ul>
+      <h2>Sticky Positioning: Precautions</h2>
+      <ul>
+        <li>Requires a scrollable ancestor with a fixed height or max-height.</li>
+        <li>May not work in very old browsers—always test.</li>
+        <li>Combine with sensible <code>top</code> offsets to avoid hiding content.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

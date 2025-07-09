@@ -1,0 +1,106 @@
+<!--fixed.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChiPi Technologies – CSS Fixed Positioning Example" />
+  <link rel="stylesheet" href="./fixec.css" />
+  <title>ChiPi Technologies – Fixed Positioning</title>
+</head>
+<body>
+  <!-- Static Header -->
+  <header class="site-header">
+    <h1>ChiPi Technologies</h1>
+    <p>Illustration of <strong>fixed positioning</strong> in CSS</p>
+  </header>
+
+  <!-- Demonstration Section -->
+  <section class="demo-section">
+    <h2>Fixed Positioning</h2>
+    <p class="intro">
+      Scroll the page to see these elements remain fixed to the viewport, while the rest of the content moves.
+    </p>
+
+    <!-- Fixed Boxes -->
+    <div class="fixed-box box1">
+      Fixed Box 1<br><small>(top: 20px; left: 20px)</small>
+    </div>
+    <div class="fixed-box box2">
+      Fixed Box 2<br><small>(top: 20px; right: 20px)</small>
+    </div>
+    <div class="fixed-box box3">
+      Fixed Box 3<br><small>(bottom: 20px; left: 20px)</small>
+    </div>
+
+    <!-- Fixed Logo -->
+    <img src="/images/download (1).jpeg"
+         alt="ChiPi Logo"
+         class="fixed-img" />
+
+    <!-- Scrollable Content -->
+    <div class="content">
+      <p>This is paragraph 1. It scrolls under the fixed elements above.</p>
+      <p>This is paragraph 2. Notice how boxes and the logo never move.</p>
+      <p>Below is a static image that will scroll out of view:</p>
+      <img src="/images/download (10).jpeg"
+           alt="Static Demo"
+           class="inline-img" />
+      <p>This is paragraph 3. The image above scrolls away like normal content.</p>
+      <p>
+      At ChiPi Technologies, we offer industry-aligned courses in HTML, CSS, JavaScript, React, Python, and more—designed to make you job-ready from day one.
+      </p>
+      <p>
+      Our instructors are seasoned IT professionals with over 20 years of experience, ensuring every concept is taught using real-world best practices.
+      </p>
+      <p>
+      In our live, hands-on sessions you’ll write code as you learn—building websites, web apps, and tools that you can immediately add to your portfolio.
+      </p>
+      <p>
+      We run flexible weekend batches, so you can upskill without disrupting your college or work schedule.
+      </p>
+      <p>
+      Bilingual instruction (Hindi &amp; English) makes sure language is never a barrier to mastering technical skills.
+      </p>
+      <p>
+      Through project-based learning, you’ll collaborate on full-stack mini-apps, giving you practical experience and a strong showcase for interviews.
+      </p>
+      <p>
+      Our mock interviews, coding challenges, and resume workshops equip you to confidently face real employer screenings.
+      </p>
+      <p>
+      Graduates get placement support via exclusive job fairs, partner referrals, and career guidance from our dedicated mentors.
+      </p>
+      <p>
+      Join a thriving community of peers and alumni—network on Slack, GitHub projects, and live coding hackathons.
+      </p>
+      <p>
+      Start your journey with ChiPi Technologies today—where practical learning meets career success!
+      </p>
+    </div>
+  </section>
+
+  <!-- Guidance Section -->
+  <section class="guidance-section">
+    <h2>When to Use <code>fixed</code></h2>
+    <ul>
+      <li>Keep headers, footers, or nav bars visible at all times.</li>
+      <li>Floating action buttons or “back to top” widgets.</li>
+      <li>Persistent chat/support/contact icons.</li>
+    </ul>
+
+    <h2>When <strong>Not</strong> to Use <code>fixed</code></h2>
+    <ul>
+      <li>Large layout containers that should scroll with content.</li>
+      <li>Elements that need to remain in the document flow for accessibility or SEO.</li>
+    </ul>
+
+    <h2>Precautions &amp; Best Practices</h2>
+    <ul>
+      <li>Manage <code>z-index</code> so fixed elements don’t hide essential content.</li>
+      <li>Ensure fixed elements are sized and spaced for small/mobile viewports.</li>
+      <li>Use sparingly—too many fixed elements can clutter the screen.</li>
+    </ul>
+  </section>
+</body>
+</html>

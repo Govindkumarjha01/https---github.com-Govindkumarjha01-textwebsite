@@ -1,29 +1,29 @@
 /* descendantselectorexample.css */
         /* Style for the parent element */
         .parent {
-            background-color: lightblue;
+            background-color: rgb(230, 199, 173);
             padding: 20px;
         }
 
         /* Style for the descendant element */
         .parent p {
-            color: darkblue;
+            color: rgb(139, 0, 0);
             font-size: 40px;
         }
 
         /* Style for the descendant element */
         .parent div {
-            background-color: lightgreen;
+            background-color: rgb(238, 144, 207);
             font-size: 12px;
         }
 
         
         .parent div p{
-            background-color: rgb(238, 216, 144);
+            background-color: rgb(169, 144, 238);
             font-size: 40px;
         }
 
         li {
-            color: rgb(238, 3, 3);
+            color: rgb(238, 234, 3);
             font-size: 20px;
         }

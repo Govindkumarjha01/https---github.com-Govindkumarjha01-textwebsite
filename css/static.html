@@ -1,0 +1,58 @@
+<!-- static.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChiPi Technologies – CSS Static Positioning Example" />
+  <link rel="stylesheet" href="../css/static.css" />
+  <title>ChiPi Technologies – Static Positioning</title>
+</head>
+<body>
+  <header class="site-header">
+    <h1>ChiPi Technologies</h1>
+    <p><strong>static</strong> positioning (the default)</p>
+  </header>
+
+  <main>
+    <section class="example-section">
+      <h2>Default Static Elements</h2>
+      <p class="static-text">
+        All elements here use <strong>static positioning</strong>—they follow the normal document flow.
+      </p>
+
+      <!-- Static box with no offset -->
+      <div class="static-box box1">
+        Static Box 1
+      </div>
+
+      <!-- Attempted offset: top is ignored for static -->
+      <div class="static-box box2">
+        Static Box 2<br>
+        (tried <code>top: 20px;</code>—ignored)
+      </div>
+
+      <!-- An image, also static by default -->
+      <img src="/images/download (1).jpeg" alt="Sample" class="static-image" />
+
+      <p class="static-description">
+        Notice that neither the boxes nor the image moved when we applied <code>top</code> in CSS—because <code>position: static</code> ignores offset properties.
+      </p>
+    </section>
+
+    <section class="guidance-section">
+      <h2>When to Use <code>static</code> Positioning</h2>
+      <ul>
+        <li>For most regular content elements (headings, paragraphs, images) that should flow normally.</li>
+        <li>When you don’t need to manually shift elements with <code>top</code>, <code>left</code>, etc.</li>
+      </ul>
+
+      <h2>When <strong>Not</strong> to Use <code>static</code></h2>
+      <ul>
+        <li>When you need overlapping or precise placement (use <code>absolute</code>, <code>relative</code>, etc.).</li>
+        <li>For sticky headers, fixed navigation bars, tooltips, or any element that must remain visible during scroll.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

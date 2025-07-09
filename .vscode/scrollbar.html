@@ -1,0 +1,135 @@
+<!-- scrollbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChiPi Technologies – CSS Scrollbar & Overflow Demonstration" />
+  <link rel="stylesheet" href="./scroll.css" />
+  <title>ChiPi Technologies – CSS Scrollbar Examples</title>
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site-header">
+    <h1>ChiPi Technologies</h1>
+    <p>CSS <strong>overflow</strong> and scroll bars</p>
+  </header>
+
+  <main>
+    <!-- 1. overflow: visible (default) -->
+    <section>
+      <h2>overflow: visible;</h2>
+      <p>This container allows content to spill outside its box.</p>
+      <div class="example overflow-visible">
+        <!-- Long list of Indian cities -->
+        <ul>
+          <li>Mumbai</li>
+          <li>Delhi</li>
+          <li>Bengaluru</li>
+          <li>Chennai</li>
+          <li>Kolkata</li>
+          <li>Pune</li>
+          <li>Hyderabad</li>
+          <li>Jaipur</li>
+          <li>Lucknow</li>
+          <li>Patna</li>
+          <li>Bhopal</li>
+          <li>Visakhapatnam</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2. overflow: hidden -->
+    <section>
+      <h2>overflow: hidden;</h2>
+      <p>This container clips any content that exceeds its bounds.</p>
+      <div class="example overflow-hidden">
+        <ul>
+          <li>Ahmedabad</li>
+          <li>Surat</li>
+          <li>Kanpur</li>
+          <li>Nagpur</li>
+          <li>Indore</li>
+          <li>Thane</li>
+          <li>Bhubaneswar</li>
+          <li>Visakhapatnam</li>
+          <li>Vadodara</li>
+          <li>Coimbatore</li>
+          <li>Patiala</li>
+          <li>Agra</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. overflow: scroll -->
+    <section>
+      <h2>overflow: scroll;</h2>
+      <p>This container always shows both scroll bars, even if not needed.</p>
+      <div class="example overflow-scroll">
+        <p>“ChiPi Technologies brings you robust, UI examples.”</p>
+        <p>…repeat this paragraph to show vertical and horizontal scrollbars…</p>
+        <p>“ChiPi Technologies brings you robust, UI examples.”</p>
+        <p>“ChiPi Technologies brings you robust, UI examples.”</p>
+        <p>“ChiPi Technologies brings you robust, UI examples.”</p>
+      </div>
+    </section>
+
+    <!-- 4. overflow: auto -->
+    <section>
+      <h2>overflow: auto;</h2>
+      <p>Scroll bars appear only when content overflows.</p>
+      <div class="example overflow-auto">
+        <ul>
+          <li>Shimla</li>
+          <li>Manali</li>
+          <li>Dharamshala</li>
+          <li>Leh</li>
+          <li>Goa</li>
+          <li>Alleppey</li>
+          <li>Ooty</li>
+          <li>Kodaikanal</li>
+          <li>Darjeeling</li>
+          <li>Gulmarg</li>
+          <li>Mahabaleshwar</li>
+          <li>Munnar</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. overflow-x: scroll; overflow-y: hidden; -->
+    <section>
+      <h2>overflow-x: scroll; overflow-y: hidden;</h2>
+      <p>Only horizontal scroll bar is enabled; vertical overflow is clipped.</p>
+      <div class="example overflow-x-scroll">
+        <!-- Inline-block items to illustrate horizontal scrolling -->
+        <div class="item">Mumbai</div>
+        <div class="item">Delhi</div>
+        <div class="item">Chennai</div>
+        <div class="item">Kolkata</div>
+        <div class="item">Pune</div>
+        <div class="item">Bengaluru</div>
+        <div class="item">Hyderabad</div>
+        <div class="item">Jaipur</div>
+      </div>
+    </section>
+
+    <!-- 6. overflow-y: scroll; overflow-x: hidden; -->
+    <section>
+      <h2>overflow-y: scroll; overflow-x: hidden;</h2>
+      <p>Only vertical scroll bar is enabled; horizontal overflow is clipped.</p>
+      <div class="example overflow-y-scroll">
+        <!-- Tall content to illustrate vertical scrolling -->
+        <p>ChiPi Technologies builds scalable CSS solutions.</p>
+        <p>Students learn by seeing and doing.</p>
+        <p>Each example is self-contained and clear.</p>
+        <p>Each example is self-contained and clear.</p>
+        <p>Each example is self-contained and clear.</p>
+        <p>Each example is self-contained and clear.</p>
+        <p>Each example is self-contained and clear.</p>
+        <p>Each example is self-contained and clear.</p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

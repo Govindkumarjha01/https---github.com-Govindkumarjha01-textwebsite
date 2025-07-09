@@ -1,0 +1,70 @@
+/* static.css */
+/* Base Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.site-header {
+  background-color: #4CAF50;  
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Example Section */
+.example-section {
+  background: white;
+  border: 2px dashed #ccc;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* All elements here are position: static by default */
+.static-box {
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3; 
+  color: rgb(3, 4, 83);
+  line-height: 50px;
+  text-align: center;
+  margin: 10px auto;
+  position: static;  /* -- implicit */
+}
+
+/* Attempted offset (ignored) */
+.static-box.box2 {
+  top: 2000px;  /* has no effect under static positioning */
+  left: -200px; /* has no effect under static positioning */
+}
+
+.static-image {
+  display: block;
+  margin: 40px auto;
+  border: 2px solid #3f51b5;
+}
+
+.static-description {
+  text-align: center;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Guidance Section */
+.guidance-section {
+  background: #fff;
+  border: 2px dotted #3f51b5;
+  margin: 20px;
+  padding: 20px;
+}
+
+.guidance-section h2 {
+  color: #3f51b5;
+}
+
+.guidance-section ul {
+  list-style: disc inside;
+}

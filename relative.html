@@ -1,0 +1,60 @@
+<!-- relative.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChiPi Technologies – CSS Relative Positioning Example" />
+  <link rel="stylesheet" href="./relative.css" />
+  <title>ChiPi Technologies – Relative Positioning</title>
+</head>
+<body>
+  <header class="site-header">
+    <h1>ChiPi Technologies</h1>
+    <p><strong>relative</strong> positioning (shifts element but keeps it in flow)</p>
+  </header>
+
+  <main>
+    <!-- Example Section -->
+    <section class="example-section">
+      <h2>Relative Positioning</h2>
+      <p class="intro">
+        Elements below are positioned <strong>relative</strong> to their normal spot.  
+        They move visually, yet still reserve their original space in the document flow.
+      </p>
+
+      <!-- Shifted Boxes -->
+      <div class="relative-box box1">Box 1<br><small>(top: 10px)</small></div>
+      <div class="relative-box box2">Box 2<br><small>(left: 20px)</small></div>
+      <p class="inline-paragraph">ChiPi Technologies</p>
+      <div class="relative-box box3">Box 3<br><small>(top: -10px; left: -20px)</small></div>
+      <div class="relative-box box4">Box 4<br><small>(top: -10px; left: -20px)</small></div>
+
+      <!-- Shifted Image -->
+      <img
+        src="/kkk.jpg"width="50%"
+        alt="Sample Graphic"
+        class="relative-img"
+      />
+      <p class="description">
+        Notice how only the visuals moved—other elements still behave as if these boxes and the image were in their original positions.
+      </p>
+    </section>
+
+    <!-- Guidance Section -->
+    <section class="guidance-section">
+      <h2>When to Use <code>relative</code></h2>
+      <ul>
+        <li>For fine-tuning position (nudges) of labels, tooltips, icons, etc.</li>
+        <li>When you want to shift elements without breaking the overall layout flow.</li>
+      </ul>
+
+      <h2>When <strong>Not</strong> to Use <code>relative</code></h2>
+      <ul>
+        <li>For elements that must overlap precisely or be taken out of flow—use <code>absolute</code> instead.</li>
+        <li>For headers or navbars that stay on screen during scroll—use <code>fixed</code> or <code>sticky</code>.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

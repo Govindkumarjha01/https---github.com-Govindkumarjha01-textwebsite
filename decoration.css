@@ -10,7 +10,7 @@
 /* Overline with solid red */
 .overline-red {
   text-decoration-line: overline;
-  text-decoration-color: red;
+  text-decoration-color: rgb(119, 0, 255);
   text-decoration-style: solid;
 }
 

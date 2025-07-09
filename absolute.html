@@ -1,0 +1,77 @@
+<!-- absolute.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChiPi Technologies – CSS Absolute Positioning Example" />
+  <link rel="stylesheet" href="./absolute.css" />
+  <title>ChiPi Technologies – Absolute Positioning</title>
+</head>
+<body>
+  <header class="site-header">
+    <h1>ChiPi Technologies</h1>
+    <p><strong>absolute</strong> positioning (removed from flow, placed precisely)</p>
+  </header>
+
+  <main>
+    <!-- Example Section -->
+    <section class="example-section relative-parent">
+      <h2>Absolute Positioning</h2>
+      <p class="intro">
+        Elements below use <strong>absolute positioning</strong>, which takes them out of the normal document flow and places them relative to the nearest ancestor with a non-<code>static</code> position.
+      </p>
+
+      <!-- Normal-flow paragraph -->
+      <p class="flow-text">
+        This paragraph sits in the normal flow. The absolutely positioned elements that follow will not affect its layout.
+      </p>
+
+      <!-- Absolute-positioned boxes -->
+      <div class="absolute-box box1">
+        Box 1<br><small>(top: 10px; left: 10px)</small>
+      </div>
+      <div class="absolute-box box2">
+        Box 2<br><small>(bottom: 10px; right: 10px)</small>
+      </div>
+      <div class="absolute-box box3">
+        Box 3<br><small>(top: 50px; right: 50px)</small>
+      </div>
+
+      <!-- Absolute-positioned image -->
+      <img
+        src="/images/download (1).jpeg"
+        alt="Sample Graphic"
+        class="absolute-img"
+      />
+
+      <!-- Another normal-flow paragraph -->
+      <p class="flow-text">
+        This paragraph also flows normally—notice how it ignores the space taken by the red boxes and the image.
+      </p>
+    </section>
+
+    <!-- Guidance Section -->
+    <section class="guidance-section">
+      <h2>When to Use <code>absolute</code></h2>
+      <ul>
+        <li>For tooltips, pop-ups, or dropdown menus that must overlay other content.</li>
+        <li>When precise placement is needed, e.g., positioning icons relative to a container.</li>
+      </ul>
+
+      <h2>When <strong>Not</strong> to Use <code>absolute</code></h2>
+      <ul>
+        <li>For large layout sections that should adapt responsively—absolute elements don't push or pull siblings.</li>
+        <li>When you need elements to participate in the document flow, e.g., vertically stacking content.</li>
+      </ul>
+
+      <h2>Precautions &amp; Best Practices</h2>
+      <ul>
+        <li>Always give the container a <code>position: relative;</code> so your absolute children are scoped correctly.</li>
+        <li>Use <code>z-index</code> thoughtfully to manage stacking order.</li>
+        <li>Be mindful of responsiveness—fixed pixel offsets can break on smaller screens.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

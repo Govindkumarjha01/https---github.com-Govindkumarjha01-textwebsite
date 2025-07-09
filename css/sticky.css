@@ -1,0 +1,132 @@
+/* sticky.css */
+/*────────────────────────────────────────────────────────
+  Base Styles
+────────────────────────────────────────────────────────*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #4CAF50; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto 60px;
+  padding: 0 20px;
+}
+
+/*────────────────────────────────────────────────────────
+  Demo Sections
+────────────────────────────────────────────────────────*/
+.demo-section {
+  background: white;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.demo-section h2 {
+  color: #3f51b5; 
+  margin-bottom: 10px;
+}
+
+.intro {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/*────────────────────────────────────────────────────────
+  Fixed Positioning Styles
+────────────────────────────────────────────────────────*/
+.fixed-box {
+  position: fixed;
+  width: 140px;
+  height: 60px;
+  background-color: #e91e63; 
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.fixed-box.box1 {
+  top: 20px;
+  left: 20px;
+}
+
+.fixed-box.box2 {
+  top: 20px;
+  right: 20px;
+}
+
+.fixed-box.box3 {
+  bottom: 20px;
+  left: 20px;
+}
+
+.content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/*────────────────────────────────────────────────────────
+  Sticky Positioning Styles
+────────────────────────────────────────────────────────*/
+.sticky-demo .sticky-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 2px dashed #ccc;
+  padding: 10px;
+  background: #e8f5e9; 
+}
+
+.sticky-box {
+  position: sticky;
+  width: 200px;
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.scroll-content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/*────────────────────────────────────────────────────────
+  Guidance Section Styles
+────────────────────────────────────────────────────────*/
+.guidance-section {
+  background: #fff;
+  border: 2px dotted #3f51b5;
+  padding: 20px;
+}
+
+.guidance-section h2 {
+  color: #3f51b5;
+  margin-top: 30px;
+}
+
+.guidance-section ul {
+  list-style: disc inside;
+  margin-bottom: 20px;
+}
+
+.guidance-section li {
+  margin-bottom: 8px;
+}

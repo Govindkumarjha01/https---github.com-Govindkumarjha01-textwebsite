@@ -1,0 +1,60 @@
+/* scrollbar.css */
+/* ----------------------------------------------------------
+   ChiPi Technologies – CSS Scrollbar & Overflow Styles
+   ---------------------------------------------------------- */
+
+/* Base container style */
+.example {
+  width: 320px;
+  height: 160px;
+  border: 2px solid #333;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+/* 1. Default: content spills out */
+.overflow-visible {
+  overflow: visible;
+}
+
+/* 2. Clips overflowing content */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* 3. Always show both scrollbars */
+.overflow-scroll {
+  overflow: scroll;
+}
+
+/* 4. Show scrollbars only when needed */
+.overflow-auto {
+  overflow: auto;
+}
+
+/* 5. Horizontal only */
+.overflow-x-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap; /* prevent wrapping so horizontal overflow happens */
+}
+
+/* 6. Vertical only */
+.overflow-y-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Inline-block items for horizontal demo */
+.item {
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+  line-height: 80px;
+  margin-right: 8px;
+  text-align: center;
+  border: 1px solid #666;
+  background-color: #e3f2fd;
+  font-weight: bold;
+}

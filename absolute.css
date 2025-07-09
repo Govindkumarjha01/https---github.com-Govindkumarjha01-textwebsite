@@ -1,0 +1,112 @@
+/* absolute.css */
+/*──────────────────────────────────────────────────────────────────────────
+  Base Styles
+──────────────────────────────────────────────────────────────────────────*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #4CAF50; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Example Section
+──────────────────────────────────────────────────────────────────────────*/
+.example-section {
+  background: white;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin-bottom: 40px;
+  position: relative; /* nearest ancestor for absolute children */
+}
+
+.example-section h2 {
+  color: #3f51b5; 
+  margin-bottom: 10px;
+}
+
+.intro {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.flow-text {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* Absolute Boxes */
+.absolute-box {
+  position: absolute;
+  width: 140px;
+  height: 60px;
+  background-color: #e91e63; 
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.absolute-box.box1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.absolute-box.box2 {
+  bottom: 10px;
+  right: 10px;
+}
+
+.absolute-box.box3 {
+  top: 50px;
+  right: 50px;
+}
+
+/* Absolute Image */
+.absolute-img {
+  position: absolute;
+  bottom: 80px;
+  left: 200px;
+  width: 100px;
+  border: 3px solid #3f51b5;
+  border-radius: 4px;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Guidance Section
+──────────────────────────────────────────────────────────────────────────*/
+.guidance-section {
+  background: #fff;
+  border: 2px dotted #3f51b5;
+  padding: 20px;
+}
+
+.guidance-section h2 {
+  color: #3f51b5;
+  margin-top: 0;
+}
+
+.guidance-section ul {
+  list-style: disc inside;
+  margin-bottom: 20px;
+}
+
+.guidance-section li {
+  margin-bottom: 8px;
+}
