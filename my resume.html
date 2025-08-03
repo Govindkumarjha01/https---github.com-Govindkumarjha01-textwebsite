@@ -1,98 +1,152 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 <head>
-   <title>My Resume</title>
-<style>
-   
-            h2,p,address,a,h3{
-                margin: 15px;
-                padding: 0;
-            }
-            .image{
-                border-radius: 100%;
-                 display: block;
-                 margin: 0 auto;
-                  width: 50%;
-            }
-            a{
-                text-decoration: none;
-            }
-            a:hover{
-                text-decoration: underline;
-            }
-            .about-me{
-                font-size: 20px;
-            }
-            .intro{
-            background-color:rgb(194, 193, 193);
-            padding: 20px;
-            padding-left: 30px;
-            }
-            .resume-body{
-                background-color:#f0f0f0 ;
-                padding: 20px;
-                padding-left: 30px;
-            }
-            body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding:0;
- background-color: yellow; /*Add this line */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns:1.15fr 1.85fr;
+      background-color: white;
+      border-left: 25px solid #f9cb10; 
+      border-right: 25px solid #f9cb10; 
+      border-top: 25px solid #f9cb10;
+      border-bottom: 25px solid #f9cb10;
+      border: 20px solid #f9cb10;
+ box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.4),
+    0 6px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
 }
-        </style>
-    </head>
-    <body width="100%">
-        <table  width="100%">
-             <tr>
-                <td rowspan="7" width="20%"></td>
-                <td colspan="4" height="50px" class="bg"></td>
-                
-            </tr>
-            <tr>
-                <td rowspan="7" width="5%" class="bg"></td>
-            </tr>
-            <tr class="intro">
-                <td rowspan="5"valign="top" width="25%">
+
+    .sidebar {
+    background-color:rgb(194, 193, 193);
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .sidebar h2 {
+      margin: 15px 0 5px;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+
+    .sidebar a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    .sidebar img {
+      vertical-align: middle;
+    }
+
+    .section {
+      background-color: #f0f0f0;
+      padding: 20px 30px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 18px;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .section li, .section p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .image {
+      border-radius: 100%;
+      display: block;
+      margin: 0 auto 20px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="./allcodefile.html">home page</a>
+
+  <div class="resume-container">
+    
+    <div class="sidebar">
                     <img src="./my profile photo.jpg" alt="my pic"width="60%"class="image">
-               
-                <h2>Contact Me</h2><hr>
-                <address>
-                    <img src="./phone.png" alt="phone"width="25px"height="15px">
-                    <a href="+917070849716"> +917070849716</a><br> 
-                    <img src="./icons8-gmail-25.png">
-                    <a href="mailto:support@govindkumarjha577@gmail.com">govindkumarjha577@gmail.com</a>
-                    <img src="./icons8-location-20.png">
-                    <a href="Rahua,Rosera,Samastipur(Bihar)">Rahua,Rosera,Samastipur(Bihar)</a>
-                    <img src="./icons8-github-12.png">
-                    <a href="https://govindkumarjha01.github.io/https---github.com-Govindkumarjha01-textwebsite/">Github</a>
-                    <img src="./icons8-linkedin-25.png">
-                    <a href="linkdin">linkdin</a>
-                    <img src="./icons8-portfolio-25.png">
-                    <a href="portfolio">portfoilo</a>
-                </address>
-                <h2>Education</h2>
-                <p>Diploma in Computer science(2023-26)</p>
-                <p>Primary education completed From P.T.E.School,Rosera(Samastipur)</p>
-                 <h2>Key Skills</h2>
-                <ul>
-                    <p><li><b>language:</b></li>Html,css,c Programming,Python,</p>
-                    <p><li><b>Database managment</b></li></p>
-                    <p><li><b>Other skills:</b></li>Kyp,spoken tutorial,Cisco</p>
-                  </ul>
-             
-                <h2>Hobbies</h2><hr>
-                <ul>
-                    <li>Reading Books</li>
-                    <li>listening Story,Song</li>
-                    <li>Play game</li>
-                </ul>
-                </td>
-            </tr>
-            <tr class="resume-body">
-                <td valign="top" rowspan="5" width="30%">
-                    <h2>Govind Kumar</h2>
+
+      <h2>Contact Me</h2>
+      <hr>
+      <address>
+        <img src="./phone.png" alt="Phone" width="18"> 
+        <a href="tel:+917070849716">+91-7070849716</a><br>
+        <img src="./icons8-gmail-25.png" alt="Gmail" width="18">
+        <a href="mailto:govindkumarjha577@gmail.com">govindkumarjha577@gmail.com</a><br>
+        <img src="./icons8-location-20.png">
+       <a href="Rahua,Rosera,Samastipur(Bihar)">Rahua,Rosera,Samastipur (Bihar)</a><br>
+        <img src="./icons8-github-12.png" alt="GitHub" width="16">
+        <a href="https://govindkumarjha01.github.io/https---github.com-Govindkumarjha01-textwebsite/">Github</a><br>
+        <img src="./icons8-linkedin-25.png" alt="LinkedIn" width="18">
+        <a href="#">LinkedIn</a><br>
+        <img src="./icons8-portfolio-25.png" alt="Portfolio" width="18">
+        <a href="#">Portfolio</a>
+      </address>
+
+      <h2>Education</h2>
+      <p>Diploma in Computer Science (2023–26)</p>
+      <p>Primary education completed from P.T.E. School, Rosera (Samastipur)</p>
+
+      <h2>Key Skills</h2>
+      <ul>
+        <li><b>Languages:</b> <br>
+            HTML, CSS, C, Python</li><br>
+        <li><b>Database Management:</b> <br>
+            MySQL</li><br>
+        <li><b>Other Skills:</b><br>
+             Kyp, Spoken Tutorial, Cisco</li>
+      </ul>
+
+      <h2>Hobbies</h2>
+      <hr>
+      <ul>
+        <li>Reading Books</li>
+        <li>Listening to Stories & Songs</li>
+        <li>Playing Games</li>
+      </ul>
+    </div>
+
+    <div class="section">
+     <h2>Govind Kumar</h2>
                     <h3>PROFESSIONAL SUMMARY</h3><hr>
                     <p>"Innovative and detail-oriented Software Developer with 5+ years of experience in building scalable web applications and optimizing performance for enterprise-level solutions. Proficient in full-stack development with expertise in JavaScript, Python, and AWS. Delivered impactful projects that improved user engagement by 30% and reduced system downtime by 45%. Passionate about writing clean, efficient, and maintainable code while mentoring junior developers</p>
                     <h2>PROFESSIONAL Experience</h2><hr>
@@ -100,21 +154,9 @@
                     <li><b>Fresher</b></li>
                     </ul>
                   <h2>ACHIEVEMENTS & CERTIFICATIONS</h2><hr>
-                  <p>
-                    </p>
-                </td>
-            </tr>
-              <tr>
-                <td rowspan="7" class="bg" width="50%"></td>
-              </tr>
-            <tr>
-            <td rowspan="7" width="20%">
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="4" class="bg" h></td>
-            </tr>
-        </table>
-    </body>
+      
+    </div>
+  </div>
+
+</body>
 </html>
