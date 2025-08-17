@@ -1,0 +1,309 @@
+/* In CSS (Cascading Style Sheets), transitions are used to create smooth animations when a property changes its value over a specified duration. Transitions enhance the user experience by providing a gradual change rather than an abrupt one. The transition property is used to define the transition effect for an element. */
+
+/* selector {
+transition: property duration timing-function delay;
+}
+ */
+
+/* selector: Specifies the HTML element to which the transition will be applied.
+property: Specifies the CSS property you want to apply the transition to (e.g., color, width, opacity).
+duration: Specifies the duration of the transition in seconds (s) or milliseconds (ms).
+timing-function: Specifies the speed curve of the transition (e.g., ease, linear, ease-in-out).
+delay: Optional. Specifies a delay before the transition starts, in seconds (s) or milliseconds (ms). */
+
+.container {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Transition Boxes */
+.transition-box {
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+/* Background Color Transition */
+.box-bg {
+  background-color: #ff7f50;
+  height: 50px;
+  transition-property: height background-color;
+}
+
+.box-bg:hover {
+  background-color: #1abc9c;
+  height:200px;
+}
+
+/* Width Transition */
+.box-width {
+  background-color: #8e44ad;
+  width: 200px;
+  transition-property: width;
+}
+
+.box-width:hover {
+  width: 400px;
+}
+
+/* Multiple Property Transition */
+.box-multi {
+  background-color: #2980b9;
+  transform: scale(1);
+  width: 200px;
+  transition-property: background-color, width;
+}
+
+.box-multi:hover {
+  background-color: #f39c12;
+  width: 300px; 
+  
+}
+
+button {
+    background-color: #3498db;
+    transition: background-color 5s ease;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b92982;
+}
+
+.transitionBackgroundChange {
+    background-color: #3498db;
+    transition: background-color 10s ease; 
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 200px;
+    font-size:25px;
+    margin: 20px;
+}
+
+.transitionBackgroundChange:hover {
+    background-color: red;
+}
+
+/* The timing-function property in a CSS transition determines how the intermediate values used during a transition are calculated. It defines the pacing of the transition effect, specifying how the property values change over time. There are several predefined timing functions and you can also create your own custom ones. */
+
+/* The ease timing function is a common choice for creating smooth transitions in CSS. It starts slow, accelerates in the middle, and then slows down towards the end */
+.box-ease {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #3498db;
+    transition: width 10s ease;
+}
+
+.box-ease:hover {
+    width: 200px;
+}
+
+/* The ease-in timing function starts the transition slowly and then accelerates toward the end */
+
+.box-ease-in {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #3498db;
+    transition: width 3s ease-in;
+}
+
+.box-ease-in:hover {
+    width: 200px;
+}
+
+/* The ease-out timing function starts the transition quickly and then decelerates toward the end */
+
+.box-ease-out {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #3498db;
+    transition: width 3s ease-out;
+}
+
+.box-ease-out:hover {
+    width: 400px;
+}
+
+/* The ease-in-out timing function combines the characteristics of both ease-in and ease-out. It starts the transition slowly, accelerates in the middle, and then slows down towards the end. */
+
+.box-ease-in-out {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #239e3e;
+    transition: width 6s ease-in-out;
+}
+
+.box-ease-in-out:hover {
+    width: 500px;
+}
+
+/* The linear timing function maintains a constant speed throughout the entire transition. It does not include acceleration or deceleration. */
+
+.box-linear {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #239e3e;
+    transition: width 6s linear;
+}
+
+.box-linear:hover {
+    width: 500px;
+}
+
+.box-linear-multiple-properties {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: #239e3e;
+    transition: background, width, height, 3s, 3s, 5s;
+}
+
+.box-linear-multiple-properties:hover {
+    width: 500px;
+    height: 600px;
+    background: linear-gradient(to right, green, blue)
+}
+
+.box-linear-all {
+    width: 100px;
+    height: 100px;
+    background: #239e3e;
+    margin: 20px;
+    transition: all 3s;
+}
+
+.box-linear-all:hover {
+    width: 200px;
+    height: 400px;
+    background: linear-gradient(to right, green, blue)
+}
+
+/* The cubic-bezier timing function allows you to create custom easing curves by specifying the coordinates of two control points on a cubic Bézier curve. */
+
+.box-cubic-bezier {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: #239e3e;
+    transition: width 1s cubic-bezier(1, .7, 0.5, 1);
+}
+
+.box-cubic-bezier:hover {
+    width: 200px;
+    background: linear-gradient(to right,red, yellow);
+}
+
+
+.box-linear-separate-property {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: linear-gradient(to right,red, yellow);
+    transition-property: width;
+    transition-duration:  3s;
+    transition-timing-function: linear;
+}
+
+.box-linear-separate-property:hover {
+    width: 300px;
+    transition-delay: 5s;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sea-wave-box {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(to right, #e9bbdb, #7e0263);
+  background-size: 200% 100%;
+  animation: waveAnimation 3s linear infinite;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: shapeTransition 6s linear infinite;
+}
+
+@keyframes shapeTransition {
+    0% {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        clip-path: circle(50% at 50% 50%);
+    }
+}
+
+@keyframes clipPathAnimation {
+0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: seagreen;
+}
+50% {
+    clip-path: circle(50% at 50% 50%);
+background-color: yellow;   
+}
+100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 
+    100%);
+    background-color: greenyellow;
+}
+}
+
+.element {
+width: 300px;
+height: 300px;
+margin: 20px;
+animation: clipPathAnimation 4s infinite;
+}

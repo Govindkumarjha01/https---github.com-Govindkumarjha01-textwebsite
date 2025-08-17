@@ -7,11 +7,45 @@
 </head>
  <a href="./allcodefile.html">home page</a>
 <style>
-  .Category{
-    display: flex;
-    justify-content: space-evenly;
-     flex-direction: row;
-      flex-wrap: wrap;
+  .saree-category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .saree-category span:hover {
+        transform: translatey(-10px)scaleY(1.1);
+        box-shadow: 10px 5px 10px 5px;
+    }
+    .saree-category span {
+        text-align: center;
+        margin: 10px;
+    }
+    .saree-category img {
+        width: 300px;
+      
+    }
+    .category {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        background-color: #a82200;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .image-section span:hover {
+        transform: translateY(-5px) scaleY(1.05);
+        box-shadow: 10px 5px 10px 5px;
+      }
+    .footer {
+        text-align: center;
+        color: #c97959;
+    }
+    .footer1, .footer2 {
+        color: #c97959;
   }
     .Top{
         background-color: #c97959;
@@ -49,13 +83,13 @@
             </div>
             <div class="nav" style="background-color: #fad9cc; padding: 10px;">
                 <center>
-                <h1 class="header" style="text-align:; color: #c97959;"><img src="./download (8).jpg" alt="search Logo" class="header" style="width: 3%; height: auto; margin: 0 auto;"> Sudershansarees<img src="./login.png" alt="login Logo" class="header" style="width: 3%; height: auto;  margin: 0 auto;">
+                <h1 class="header" style=" color: #c97959;"><img src="./download (8).jpg" alt="search Logo" class="header" style="width: 3%; height: auto; margin: 0 auto;"> Sudershansarees<img src="./login.png" alt="login Logo" class="header" style="width: 3%; height: auto;  margin: 0 auto;">
                 <img src="./Cart.png" alt="search Logo" class="header" style="text-align: center;width: 3%; height: auto; margin: 0 auto;"></h1>
                 </center>
                 <center>
-                <a href="#" class="header" style="text-align: display: block; color: #c97959; text-decoration: none;">Home</a>
-                <a href="#" class="header" style="text-align: display: block; color: #c97959; text-decoration: none;">Woman</a>
-                <a href="#" class="header" style="text-align: display: block; color: #c97959; text-decoration: none;">man</a>
+                <a href="#" class="header" style=" display: block; color: #c97959; text-decoration: none;">Home</a>
+                <a href="#" class="header" style=" display: block; color: #c97959; text-decoration: none;">Woman</a>
+                <a href="#" class="header" style=" display: block; color: #c97959; text-decoration: none;">man</a>
                 <a href="#" class="header" style="text-align: center; color: #c97959; text-decoration: none;">Kids</a>
                 <a href="#" class="header" style="text-align: center; color: #c97959; text-decoration: none;">Branded collections</a>
                 <a href="#" class="header" style="text-align: center; color: #c97959; text-decoration: none;">Ready to Ship</a>
@@ -81,41 +115,45 @@
         </section>
         <section>
           <h1>SHOP BY CATEGORY</h1>
-            <div class="category">
+              <div class="saree-category">
                 <span>
-                 <img src="./fest.jpg" alt="sharee logo" class="category" style="width: 50%; height:auto; margin:0 auto;">
-                 <p>Festival collections Sarees</p></span>
-                 <span>
-                 <img src="./SUDARSHAN-SILKS-17-02-21338306_9b53f575-84a9-4a28-a0ab-633964d936ed.jpg" alt="sharee logo" class="category" style="width:50%; height:auto; margin:0 auto;">
-                 <p>Kanchipuram Sarees</p></span>
-                 <span>
-                <img src="./MC15041404.jpg" alt="Sharee" class="category" style=" width:50%; height:auto;; margin:0 auto;">
-                <p>Pure Mysore Silk saree</p></span>
+                 <img src="./fest.jpg" alt="sharee logo" >
+                 <p>Festival collections Sarees</p>
+                </span>
                 <span>
-                <img src="./COTTON.jpg" alt="Sharee" class="category" style="width:50%; height:auto; margin:0 auto;">
-                <p>Cotton saree</p></span>
+                 <img src="./SUDARSHAN-SILKS-17-02-21338306_9b53f575-84a9-4a28-a0ab-633964d936ed.jpg" alt="sharee logo"  >
+                 <p>Kanchipuram Sarees</p>
+                </span>
                 <span>
-                <img src="./ART15052980.jpg" alt="Sharee" class="category" style="width:50%; height:auto; margin:0 auto;">
-                <p>Art silk saree</p></span>
+                 <img src="./MC15041404.jpg" alt="Sharee">
+                 <p>Pure Mysore Silk saree</p>
+                </span>
                 <span>
-                <img src="./TIS15052505.jpg" alt="Sharee" class="category" style="position:relative; width:50%; height:auto; margin:0 auto;">
-                <p>Raw silk Saree</p></span>
+                 <img src="./COTTON.jpg" alt="Sharee" >
+                 <p>Cotton saree</p>
+                </span>
                 <span>
-                <img src="./gerogette.webp" alt="Sharee" class="category" style="position: relative;width:50%; height:auto; margin:0 auto;">
-                <p>Georgette Sarees</p></span>
+                 <img src="./ART15052980.jpg" alt="Sharee">
+                 <p>Art silk saree</p></span>
                 <span>
-                <img src="./ZIR20422-3.jpg" alt="Sharee" class="category" style="position: relative;width:50%; height:auto;  margin:0 auto;">
-                <p>Lehenga Choli</p></span>
+                 <img src="./TIS15052505.jpg" alt="Sharee">
+                 <p>Raw silk Saree</p></span>
                 <span>
-                <img src="./indowestren.webp" alt="Sharee" class="category" style="position: relative;width:50%; height:auto; margin:0 auto;">
-                <p>indowestren</p></span>
+                 <img src="./gerogette.webp" alt="Sharee"  >
+                 <p>Georgette Sarees</p></span>
                 <span>
-                <img src="./ramraj.webp" alt="Sharee" class="category" style="position: relative;width:50%; height:auto; margin:0 auto;">
-                <p>Designer Shirts</p></span>
+                 <img src="./ZIR20422-3.jpg" alt="Sharee">
+                 <p>Lehenga Choli</p></span>
                 <span>
-                <img src="./IMG_20241116_124448.jpg" alt="Sharee" class="category" style="position: relative;width:50%; height:auto;  margin:0 auto;">
-                <p>Dhoti</p></span>
-                </div>
+                 <img src="./indowestren.webp" alt="Sharee" >
+                 <p>indowestren</p></span>
+                <span>
+                 <img src="./ramraj.webp" alt="Sharee" >
+                 <p>Designer Shirts</p></span>
+                <span>
+                 <img src="./IMG_20241116_124448.jpg" alt="Sharee">
+                 <p>Dhoti</p></span>
+              </div>
                 <!--<div>
                     <h3>
                         <span  class="h1" style="color: #c97959;">Festival collections Sarees </span> 

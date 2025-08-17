@@ -1,27 +1,339 @@
-/* --------------------------------------------- */
-/* ChiPi Technologies - Text Transformation Properties */
-/* --------------------------------------------- */
-
-/* Converts all letters to uppercase */
-.uppercase {
-  text-transform: uppercase;
+/* ========== 2D Translation: Moves the element horizontally on X-axis ========== */
+.translateX-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 20px;
 }
 
-/* Converts all letters to lowercase */
-.lowercase {
-  text-transform: lowercase;
+.translateX-example:hover {
+    transform: translateX(25px);
 }
 
-/* Capitalizes the first letter of each word */
-.capitalize {
-  text-transform: capitalize;
+/* ========== 2D Translation: Moves the element vertically on Y-axis ========== */
+.translateY-example {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px;
+    color:azure;
 }
 
-/* Keeps the text as is (no transformation) */
-.normal-case {
-  text-transform: none;
+.translateY-example:hover {
+    transform: translateY(30px);
 }
 
-/* --------------------------------------------- */
-/* End of ChiPi Technologies - Text Transformation Styles */
-/* --------------------------------------------- */
+/* ========== 2D Translation: Moves the element on both X and Y axes ========== */
+.translate-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 20px;
+}
+
+.translate-example:hover {
+    transform: translate(50px, -20px);
+}
+
+/* ========== 2D Rotation: Rotates element around Z-axis in 2D space ========== */
+.rotate-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 20px;
+}
+
+.rotate-example:hover {
+    transform: rotate(15deg);
+}
+
+/* ========== Cube Section Title Styling ========== */
+.cube-section {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
+
+/* ========== Perspective Container for 3D Cubes ========== */
+.rotateX3d-cube-wrapper,
+.rotateY3d-cube-wrapper,
+.rotate3d-cube-wrapper {
+  perspective: 600px;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+}
+
+/* ========== Cube Core Structure for 3D Rotation ========== */
+.rotateX3d-cube-demo,
+.rotateY3d-cube-demo,
+.rotate3d-cube-demo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+/* ========== Cube Face Design for 3D Rotate Cubes ========== */
+.face-x,
+.face-y,
+.face-3d {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(103, 58, 183, 0.8);
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* ========== Cube Face Positioning ========== */
+.front  { transform: translateZ(125px); }
+.back   { transform: rotateY(180deg) translateZ(125px); }
+.left   { transform: rotateY(-90deg) translateZ(125px); }
+.right  { transform: rotateY(90deg) translateZ(125px); }
+.top    { transform: rotateX(90deg) translateZ(125px); }
+.bottom { transform: rotateX(-90deg) translateZ(125px); }
+
+/* ========== RotateX – 3D Horizontal Rotation ========== */
+.rotateX3d-cube-wrapper:hover .rotateX3d-cube-demo {
+  transform: rotateX(125deg);
+}
+
+/* ========== RotateY – 3D Vertical Rotation ========== */
+.rotateY3d-cube-wrapper:hover .rotateY3d-cube-demo {
+  transform: rotateY(270deg);
+}
+
+/* ========== rotate3d – Rotates in 3D on custom vector ========== */
+.rotate3d-cube-wrapper:hover .rotate3d-cube-demo {
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+
+/* ========== Section for Scale Transformations ========== */
+.scale-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* ========== Layout Container for 2D Scale Boxes ========== */
+.scale2d-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* ========== Box Style for 2D Scaling ========== */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #38bdf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: transform 0.5s ease;
+}
+
+/* ========== scaleX – Stretches width only ========== */
+.scale-x:hover {
+  transform: scaleX(1.5);
+}
+
+/* ========== scaleY – Stretches height only ========== */
+.scale-y:hover {
+  transform: scaleY(1.8);
+}
+
+/* ========== scale – Uniform scaling on both width and height ========== */
+.scale-uniform:hover {
+  transform: scale(1.3);
+}
+
+/* ========== Wrapper for 3D Cube with scale3d ========== */
+.scale3d-cube-wrapper {
+  perspective: 800px;
+  width: 150px;
+  height: 150px;
+  margin: 60px auto;
+}
+
+/* ========== Cube Setup for scale3d ========== */
+.scale3d-cube {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(20deg);
+  transition: transform 0.8s ease;
+}
+
+/* ========== scale3d – Scales cube on X, Y, Z axes ========== */
+.scale3d-cube-wrapper:hover .scale3d-cube {
+  transform: rotateX(-20deg) rotateY(20deg) scale3d(1.3, 1.3, 1.3);
+}
+
+/* ========== Cube Face Design for scale3d ========== */
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(34, 197, 94, 0.85);
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+/* ========== Scaling + Rotation on 2D Box ========== */
+.scale-rotate-example {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 20px;
+    left: 200px;
+}
+
+.scale-rotate-example:hover {
+    transform: scale(1.5) rotate(45deg);
+}
+
+/* ========== skewX – Tilts horizontally ========== */
+.skewX-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 20px;
+}
+
+.skewX-example:hover {
+    transform: skewX(45deg);
+}
+
+/* ========== skewY – Tilts vertically ========== */
+.skewY-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px;
+}
+
+.skewY-example:hover {
+    transform: skewY(30deg);
+}
+
+/* ========== Generic Box for skew extremes ========== */
+.skewMinYAndMaxYAndMinXAndMaxX-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px;
+}
+
+/* ========== skewX min – extreme negative horizontal skew ========== */
+.skewX-min:hover {
+    transform: skewX(-89deg);
+}
+
+/* ========== skewX max – extreme positive horizontal skew ========== */
+.skewX-max:hover {
+    transform: skewX(89deg);
+}
+
+/* ========== skewY min – extreme negative vertical skew ========== */
+.skewY-min:hover {
+    transform: skewY(-89deg);
+}
+
+/* ========== skewY max – extreme positive vertical skew ========== */
+.skewY-max:hover {
+    transform: skewY(89deg);
+}
+
+/* ========== Combined skewX and skewY ========== */
+.skew-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px;
+}
+
+.skew-example:hover {
+    transform: skew(30deg, 20deg);
+}
+
+/* ========== Container with Perspective for translate3d ========== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  perspective: 200px;
+}
+
+/* ========== Cube Element for translate3d ========== */
+.cube {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* ========== translate3d – Moves cube in X, Y, and Z directions ========== */
+.translate3d-demo:hover {
+  transform: translate3d(50px, -30px, 100px) rotateY(30deg);
+}
+
+/* ========== Faces of translate3d cube ========== */
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(30, 144, 255, 0.8);
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* ========== Face Positioning for translate3d cube ========== */
+.front  { transform: translateZ(75px); }
+.back   { transform: rotateY(180deg) translateZ(75px); }
+.right  { transform: rotateY(90deg) translateZ(75px); }
+.left   { transform: rotateY(-90deg) translateZ(75px); }
+.top    { transform: rotateX(90deg) translateZ(75px); }
+.bottom { transform: rotateX(-90deg) translateZ(75px); }
+
+/* ========== 2D Matrix Transformation ========== */
+.matrix-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 20px;
+}
+
+/* matrix(a, b, c, d, tx, ty) = scale, skew, and translate combined */
+/* Apply matrix transformation on hover */
+/* Represents a 2D transformation matrix. It allows combining multiple transformations into one. */
+/* 1st and 4th parameter - Scaling factors for the horizontal and vertical axes. */
+/* 2nd and 3rd parameter - Skewing factors for the horizontal and vertical axes. */
+/* 5th and 6th parameter - Translation values for the horizontal and vertical axes. */
+.matrix-example:hover {
+    transform: matrix(2, 0.5, -0.5, 2, 300, 10);
+}
