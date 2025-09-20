@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+p {
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Named Colors */
+.named-red {
+  color: red;
+  background-color: #ffe5e5;
+}
+.named-blue {
+  color: blue;
+  background-color: #e0f0ff;
+}
+.named-green {
+  color: green;
+  background-color: #e0ffe0;
+}
+.named-yellow {
+  color: orange;
+  background-color: #fff9db;
+}
+
+/* Hexadecimal Colors */
+.hex-red {
+  color: white;
+  background-color: #ff0000;
+}
+.hex-green {
+  color: black;
+  background-color: #00ff00;
+}
+.hex-blue {
+  color: white;
+  background-color: #0000ff;
+}
+.hex-purple {
+  color: white;
+  background-color: #800080;
+}
+
+/* RGB Colors */
+.rgb-red {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+.rgb-green {
+  background-color: rgb(0, 255, 0);
+  color: black;
+}
+.rgb-blue {
+  background-color: rgb(0, 0, 255);
+  color: white;
+}
+.rgb-orange {
+  background-color: rgb(255, 165, 0);
+  color: black;
+}
+
+/* RGBA Colors */
+.rgba-red {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.rgba-green {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+.rgba-blue {
+  background-color: rgba(0, 0, 255, 0.7);
+  color: white;
+}
+.rgba-yellow {
+  background-color: rgba(255, 255, 0, 0.9);
+}
+
+/* Transparency Impact */
+.transparency-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  border: 2px dashed #999;
+  padding: 10px;
+}
+
+.box {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.base-box {
+  top: 30px;
+  left: 30px;
+  background-color: steelblue;
+  color: white;
+  z-index: 1;
+}
+
+.transparent-box {
+  top: 60px;
+  left: 60px;
+  background-color: rgba(255, 0, 0, .4); /* semi-transparent red */
+  color: black;
+  z-index: 2;
+}
+
+/* HSL Colors */
+.hsl-red {
+  background-color: hsl(0, 100%, 50%);
+  color: white;
+}
+.hsl-green {
+  background-color: hsl(120, 100%, 50%);
+  color: black;
+}
+.hsl-blue {
+  background-color: hsl(240, 100%, 50%);
+  color: white;
+}
+.hsl-orange {
+  background-color: hsl(30, 100%, 50%);
+  color: black;
+}
+
+/* HSLA Colors */
+.hsla-red {
+  background-color: hsla(0, 100%, 50%, 0.5);
+}
+.hsla-green {
+  background-color: hsla(120, 100%, 50%, 0.3);
+}
+.hsla-blue {
+  background-color: hsla(240, 100%, 50%, 0.7);
+  color: white;
+}
+.hsla-yellow {
+  background-color: hsla(60, 100%, 50%, 0.9);
+}
+
+/* Transparency Impact with HSLA */
+.transparent-box-hsla {
+  top: 60px;
+  left: 60px;
+  background-color: hsla(120, 100%, 40%, 0.4); /* semi-transparent green */
+  color: hsla(360, 100%, 40%, 1);
+  z-index: 2;
+}
+
+/* Transparent */
+.transparent1 {
+  background-color: transparent;
+  color: darkred;
+  border: 1px solid darkred;
+}
+.transparent2 {
+  background-color: transparent;
+  color: navy;
+  border: 1px dashed navy;
+}

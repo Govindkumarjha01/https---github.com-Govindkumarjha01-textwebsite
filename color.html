@@ -1,13 +1,74 @@
-<html>
-<head>31
-    <title>HTML Form Elements</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChiPi Technologies - CSS Color Formats</title>
+  <link rel="stylesheet" href="./color.css">
 </head>
-    <body>
-         <a href="./allcodefile.html">home page</a>
-        <form>
-        <form>
-            <label for="favcolor">Select your favorite color:</label>
-            <input type="color" id="favcolor" name="favcolor" value="#000000">
-        </form>
-    </body>
+<body>
+  <a href="./allcodefile.html">home page</a>
+  <h1>Welcome to ChiPi Technologies</h1>
+  
+  <!-- Named Colors -->
+  <h2>Named Colors</h2>
+  <p class="named-red">This is red using a named color</p>
+  <p class="named-blue">This is blue using a named color</p>
+  <p class="named-green">This is green using a named color</p>
+  <p class="named-yellow">This is yellow using a named color</p>
+  
+  <!-- Hexadecimal Colors -->
+  <h2>Hexadecimal Colors</h2>
+  <p class="hex-red">This is red using hexadecimal color #ff0000</p>
+  <p class="hex-green">This is green using hexadecimal color #00ff00</p>
+  <p class="hex-blue">This is blue using hexadecimal color #0000ff</p>
+  <p class="hex-purple">This is purple using hexadecimal color #800080</p>
+  
+  <!-- RGB Colors -->
+  <h2>RGB Colors</h2>
+  <p class="rgb-red">This is red using RGB color rgb(255, 0, 0)</p>
+  <p class="rgb-green">This is green using RGB color rgb(0, 255, 0)</p>
+  <p class="rgb-blue">This is blue using RGB color rgb(0, 0, 255)</p>
+  <p class="rgb-orange">This is orange using RGB color rgb(255, 165, 0)</p>
+  
+  <!-- RGBA Colors -->
+  <h2>RGBA Colors (with transparency)</h2>
+  <p class="rgba-red">This is red with 50% transparency using rgba(255, 0, 0, 0.5)</p>
+  <p class="rgba-green">This is green with 30% transparency using rgba(0, 255, 0, 0.3)</p>
+  <p class="rgba-blue">This is blue with 70% transparency using rgba(0, 0, 255, 0.7)</p>
+  <p class="rgba-yellow">This is yellow with 90% transparency using rgba(255, 255, 0, 0.9)</p>
+
+  <!-- Transparency Impact -->
+  <h2>Transparency Impact (Overlapping Boxes)</h2>
+
+  <div class="transparency-container">
+    <div class="box base-box">Base Box (Below)</div>
+    <div class="box transparent-box">Transparent Box (Above)</div>
+  </div>
+  
+  <!-- HSL (Hue, Saturation, Lightness) Colors -->
+  <h2>HSL Colors</h2>
+  <p class="hsl-red">This is red using HSL color hsl(0, 100%, 50%)</p>
+  <p class="hsl-green">This is green using HSL color hsl(120, 100%, 50%)</p>
+  <p class="hsl-blue">This is blue using HSL color hsl(240, 100%, 50%)</p>
+  <p class="hsl-orange">This is orange using HSL color hsl(30, 100%, 50%)</p>
+  
+  <!-- HSLA Colors -->
+  <h2>HSLA Colors (with transparency)</h2>
+  <p class="hsla-red">This is red with 50% transparency using hsla(0, 100%, 50%, 0.5)</p>
+  <p class="hsla-green">This is green with 30% transparency using hsla(120, 100%, 50%, 0.3)</p>
+  <p class="hsla-blue">This is blue with 70% transparency using hsla(240, 100%, 50%, 0.7)</p>
+  <p class="hsla-yellow">This is yellow with 90% transparency using hsla(60, 100%, 50%, 0.9)</p>
+
+  <!-- Transparency -->
+  <div class="transparency-container">
+    <div class="box base-box">Base Box (Below)</div>
+    <div class="box transparent-box-hsla">HSLA Transparent Box</div>
+  </div>
+  
+  <!-- Transparent Background -->
+  <h2>Transparent Background</h2>
+  <p class="transparent1">This text has a transparent background</p>
+  <p class="transparent2">This text also has a transparent background</p>
+  
+</body>
 </html>

@@ -1,0 +1,129 @@
+div {  
+padding: 50px;  
+margin: 20px;  
+border: 6px ridge red;  
+width: 300px;  
+height: 150px;  
+}  
+
+p { 
+  font-size: 23px;
+}
+/* Border Radius */
+/* The border-radius property allows you to round the corners of an element's outer border edge. 
+   You can set a single radius for all four corners, or specify different radii for each corner. 
+   The values can be in pixels, ems, percentages, etc. */
+
+/* The border-radius property can take one to four values, 
+which represent the radii for the top-left, top-right, bottom-right, and bottom-left corners respectively. 
+If only one value is provided, it applies to all four corners. 
+If two values are provided, the first applies to the top-left and bottom-right corners, 
+and the second applies to the top-right and bottom-left corners. 
+If three values are provided, the first applies to the top-left corner, 
+the second applies to the top-right and bottom-left corners, and the third applies to the bottom-right corner. */   
+/* ========================= Border Radius Examples ========================= */
+
+/* Makes the element fully rounded by applying a large fixed radius */
+.border-radius1 {  
+  border-radius: 100px;  
+  background: magenta;  
+}
+
+/* Applies elliptical curves: top-left and bottom-right corners = 25%, others = 5% */
+.border-radius2 {  
+  border-radius: 25% 5%;  
+  background: blue;  
+}
+
+/* Uses a mix of units: pixels, em, and percentage to create interesting curves 
+If three values are provided, the first applies to the top-left corner, 
+the second applies to the top-right and bottom-left corners, and the third applies to the bottom-right corner.*/
+.border-radius3 {  
+  border-radius: 10px 20em 20%;  
+  background: blueviolet;  
+}
+
+/* All corners have the same fixed curve of 50px – results in a smooth rectangle */
+.border-radius4 {  
+  border-radius: 50px 50px 250px 250px;  
+  background: green;  
+} 
+
+/* Perfect circle: 50% border radius makes square element a circle */
+.border-radius5 {  
+  border-radius: 45%;   
+  background: green;  
+} 
+
+/* Complex shape with different border radius on each corner using em units */
+.border-radius6 {  
+  border-radius: 2em 4em 8em 16em;  
+  background: rebeccapurple;  
+  height: 200px;
+  width: 200px;
+}
+
+/* ========================= Outline Examples ========================= */
+
+/* Thin solid greenyellow outline with black border */
+.outline1 {
+  border: 10px solid black;
+  outline-style: solid;
+  outline-color: greenyellow;
+  outline-width:thin;
+}
+
+/* Dashed medium-thick greenyellow outline with black border */
+.outline2 {
+  border: 1px solid black;
+  outline-style: dashed;
+  outline-color: greenyellow;
+  outline-width: medium;
+}
+
+/* Dotted thick greenyellow outline with black border */
+.outline3 {
+  border: 1px solid black;
+  outline-style: dotted;
+  outline-color: greenyellow;
+  outline-width: thick;
+}
+
+/* Double line outline with a large width (25px), color: greenyellow */
+.outline4 {
+  border: 1px solid black;
+  outline-style: double;
+  outline-color: greenyellow;
+  outline-width: 25px;
+}
+
+/* Minimal solid outline using shorthand; no border */
+.outline5 {
+  outline: solid;
+}
+
+/* Ridge-style purple outline using shorthand notation */
+.outline6 {
+  outline: ridge purple;
+}
+
+/* Custom dashed blue outline with 15px thickness using shorthand */
+.outline7 {
+  outline: 15px dashed blue;
+}
+
+/* Thick dotted red outline using shorthand */
+.outline8 {
+  outline: thick dotted red;
+}
+
+/* ========================= Outline Offset Example ========================= */
+
+/* Adds space between the element's border and the outline */
+.offset1 {
+  margin: 60px;
+  background: yellow;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: -50px; /* Pushes outline 50px outside the border */
+}

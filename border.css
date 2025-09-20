@@ -1,0 +1,78 @@
+/* Shorthand syntax: border-width border-style border-color */
+.container{
+    width: 300px;
+    height: 300px;
+}
+
+.border1 {
+  border: 40px dashed blue; /* width, style, color */
+}
+
+/* Longhand syntax: border-width, border-style, border-color separately */
+.border2 {
+  border-width: 20px;
+  border-style: double;
+  border-color: #333;
+}
+
+/* Individual Properties */
+.border3 {
+  border-width: 10px 10px 30px 40px; /* top right bottom left */
+  border-style: solid dashed dotted double; /* top right bottom left */
+  border-color: #792e2e #089ba06b #471b1b #ee8686; /* top right bottom left */
+}
+
+.border4 {
+  border-style: none;
+}
+
+.border5 {
+  border-style: solid;
+}
+
+.border6 {
+  border-style: dashed;
+}
+
+.border7 {
+  border-style: dotted;
+}
+
+.border8 {
+  border-style: double;
+}
+
+.border9 {
+  border-style: groove;
+}
+
+.border10 {
+  border-style: ridge;
+}
+
+.border11 {
+  border-style: inset;
+}
+
+.border12 {
+  border-style: outset;
+}
+
+.border13 {
+  border-style: hidden;
+}   
+
+.border14 {
+  border-left: 2px solid black;
+  border-right:2px solid #471b1b; 
+  border-top:4px dashed #792e2e;
+  border-bottom: 6px dotted #089ba06b;
+}
+
+.widewidth {
+    border-width: 20px;
+}
+
+.margin{
+  margin: 30px;
+}
