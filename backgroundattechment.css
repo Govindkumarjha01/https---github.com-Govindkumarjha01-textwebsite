@@ -1,0 +1,121 @@
+/*==============================================================================
+  ChiPi Technologies – background-attachment Samples
+==============================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f0fe;
+  color: #333;
+  line-height: 1.4;
+}
+.site-header {
+  background-color: #1a73e8;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/*==============================================================================
+  Base container (stacked)
+==============================================================================*/
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 3px solid #1a73e8;
+  border-radius: 6px;
+  min-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #1a73e8;
+  text-align: center;
+}
+
+/* Scrollable for local attachment */
+.scrollable {
+  max-height: 200px;
+  overflow: auto;
+}
+
+/*==============================================================================
+  background-attachment: scroll
+============================================================================== */
+/* background-attachment: scroll is the default behavior, so it can be omitted. */
+/* Attachments with scroll */
+/* 
+   The background image scrolls with the content of the element.
+   This is the default behavior for background images.
+*/
+.attach-scroll-1 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: cover;
+  background-attachment: scroll;
+}
+.attach-scroll-2 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: contain;
+  background-attachment: scroll;
+}
+.attach-scroll-3 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: auto;
+  background-attachment: scroll;
+}
+
+.big-font{
+  font-size: 4rem;
+  line-height: 1.6;
+  color:aqua;
+}
+
+/*==============================================================================
+  background-attachment: fixed
+==============================================================================*/
+/* background-attachment: fixed makes the background image fixed with respect to the viewport.
+   The background image does not scroll with the content of the element.
+   It stays in place even when the page is scrolled.
+*/
+.attach-fixed-1 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.attach-fixed-2 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: contain;
+  background-attachment: fixed;
+}
+.attach-fixed-3 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+/*==============================================================================
+  background-attachment: local
+==============================================================================*/
+/* background-attachment: local makes the background image fixed with respect to the element itself.
+   The background image scrolls with the content of the element, but it is fixed within that element.
+   This is useful for elements that have their own scrolling content.
+*/
+.attach-local-1 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: cover;
+  background-attachment: local;
+}
+.attach-local-2 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: contain;
+  background-attachment: local;
+}
+.attach-local-3 {
+  background-image: url('https://chipitechnologies.com/static/media/whoweare.df4e65516bae77079af2.jpeg');
+  background-size: auto;
+  background-attachment: local;
+}
